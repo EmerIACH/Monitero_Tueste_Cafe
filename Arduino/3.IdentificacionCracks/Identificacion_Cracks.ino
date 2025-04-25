@@ -16,13 +16,13 @@
 #define BUFFER_SIZE 512
 #define SAMPLE_RATE 48000
 #define N 512
-#define THRESHOLD 50000000 //Umbral estatico
+#define THRESHOLD 50000000 //Umbral estatico se ajusta relizando pruebas
 #define DEBOUNCE_TIME 500
 
 // Rangos de frecuencia válidos
 #define FREQ1_MIN 8000.0
 #define FREQ1_MAX 10000.0
-#define FREQ2_MIN 13500.0
+#define FREQ2_MIN 14000.0
 #define FREQ2_MAX 15000.0
 
 const i2s_port_t I2S_PORT = I2S_NUM_0;
