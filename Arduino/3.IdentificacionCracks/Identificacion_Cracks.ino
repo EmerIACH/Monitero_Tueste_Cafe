@@ -171,15 +171,11 @@ void loop() {
         if (peakFreq >= FREQ1_MIN && peakFreq <= FREQ1_MAX) {
           Serial.print("Detección válida en Rango 1 (8-10 kHz)! Frecuencia dominante: ");
           Serial.print(peakFreq);
-          Serial.print(" Hz, Umbral alcanzado: ");
-          Serial.println(maxAmplitude);
           lastPeakTime = millis();
           recordDetection(); // Se cuenta la detección
         } else if (peakFreq >= FREQ2_MIN && peakFreq <= FREQ2_MAX) {
-          Serial.print("Detección válida en Rango 2 (13.5-15 kHz)! Frecuencia dominante: ");
+          Serial.print("Detección válida en Rango 2 (14-15 kHz)! Frecuencia dominante: ");
           Serial.print(peakFreq);
-          Serial.print(" Hz, Umbral alcanzado: ");
-          Serial.println(maxAmplitude);
           lastPeakTime = millis();
           recordDetection(); // Se cuenta la detección
         }
